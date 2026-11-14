@@ -1,0 +1,56 @@
+/* Optional starting tokens for websites using the BBKan visual language. */
+:root {
+  color-scheme: light;
+  --bbkan-canvas: #f1eee5;
+  --bbkan-surface: #fffcf5;
+  --bbkan-paper: #f8f5ed;
+  --bbkan-ink: #222923;
+  --bbkan-muted: #77776d;
+  --bbkan-rule: #d2cfc3;
+  --bbkan-blue: #17439a;
+  --bbkan-blue-deep: #123779;
+  --bbkan-orange: #f26a32;
+  --bbkan-edge-light: #ffffff;
+  --bbkan-edge-dark: #a4a49b;
+  --bbkan-focus: #f26a32;
+  --bbkan-space: 4px;
+  --bbkan-font-sans: "Microsoft YaHei UI", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+  --bbkan-font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+}
+
+[data-bbkan-theme="dark"] {
+  color-scheme: dark;
+  --bbkan-canvas: #1d211f;
+  --bbkan-surface: #282f2b;
+  --bbkan-paper: #222824;
+  --bbkan-ink: #eceae3;
+  --bbkan-muted: #b5bcb2;
+  --bbkan-rule: #48514a;
+  --bbkan-blue: #244a82;
+  --bbkan-blue-deep: #173865;
+  --bbkan-orange: #ff884f;
+  --bbkan-edge-light: #67716a;
+  --bbkan-edge-dark: #111713;
+  --bbkan-focus: #ff884f;
+}
+
+.bbkan-surface {
+  color: var(--bbkan-ink);
+  background: var(--bbkan-surface);
+  border: 1px solid var(--bbkan-rule);
+}
+
+.bbkan-tactile {
+  border: 2px solid var(--bbkan-edge-light);
+  box-shadow: 2px 2px 0 var(--bbkan-edge-dark), inset -1px -1px 0 var(--bbkan-edge-dark);
+}
+
+.bbkan-tactile:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 var(--bbkan-edge-dark), inset -1px -1px 0 var(--bbkan-edge-dark);
+}
+
+.bbkan-focus:focus-visible {
+  outline: 3px solid var(--bbkan-focus);
+  outline-offset: 3px;
+}
