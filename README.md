@@ -71,11 +71,13 @@ Skill 会根据网页或海报读取相应的设计指南。它提供颜色、�
 
 - [`SKILL.md`](skills/bbkan-visual-design/SKILL.md)：共享视觉原则及网页、海报的使用指引。
 - [`references/web.md`](skills/bbkan-visual-design/references/web.md)：网页布局、组件状态与响应式设计。
+- [`references/motion.md`](skills/bbkan-visual-design/references/motion.md)：非线性缓动、交互时长与减少动态效果的处理。
 - [`references/poster.md`](skills/bbkan-visual-design/references/poster.md)：海报构图、信息层级与输出要点。
 - [`assets/bbkan-theme.css`](skills/bbkan-visual-design/assets/bbkan-theme.css)：可选的网页颜色变量与立体边框样式。
+- [`assets/bbkan-motion.css`](skills/bbkan-visual-design/assets/bbkan-motion.css)：可选的缓动变量和交互动效预设。
 - [`examples/`](examples/)：网页和海报的示例提示词。
 
-**动效覆盖范围：**目前包含按钮按下效果、悬停与焦点状态的提示，以及减少动态效果的检查建议；尚未提供完整的动效规范或动画组件。
+**动效覆盖范围：**提供基于原网站曲线的交互与数字滚动缓动，以及面板进入、退出和状态移动的建议预设；附 CSS 变量、可选类和减少动态效果的处理。更多用法见 [动效指南](skills/bbkan-visual-design/references/motion.md)。
 
 ### 作者与支持
 
@@ -158,11 +160,13 @@ The skill first identifies the medium and its constraints, then applies the shar
 
 - `skills/bbkan-visual-design/SKILL.md` — shared design principles and routing for websites and posters.
 - `skills/bbkan-visual-design/references/web.md` — page structure, components, responsive behavior, and interaction states.
+- `skills/bbkan-visual-design/references/motion.md` — nonlinear easing, interaction timing, and reduced-motion guidance.
 - `skills/bbkan-visual-design/references/poster.md` — hierarchy, composition, print sizes, and export checks.
 - `skills/bbkan-visual-design/assets/bbkan-theme.css` — optional CSS variables and tactile border utilities for web work.
+- `skills/bbkan-visual-design/assets/bbkan-motion.css` — optional easing tokens and motion utilities.
 - `examples/` — short example briefs for trying both formats.
 
-**Motion coverage:** The current skill suggests pressed button effects, hover and focus states, and reduced-motion checks. It does not yet include a complete motion system or animation components.
+**Motion coverage:** Includes interaction and number-reel easing based on the original site, suggested panel and state-change presets, CSS utilities, and reduced-motion behavior. See the [motion guide](skills/bbkan-visual-design/references/motion.md).
 
 ## Design tokens
 

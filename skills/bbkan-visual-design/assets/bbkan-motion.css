@@ -1,0 +1,41 @@
+/* Paperframe motion: opt in per component; no global animation overrides. */
+:root {
+  --bbkan-ease-responsive: cubic-bezier(.2, .8, .2, 1);
+  --bbkan-ease-settle: cubic-bezier(.16, 1, .3, 1);
+  --bbkan-ease-exit: cubic-bezier(.4, 0, 1, 1);
+  --bbkan-ease-move: cubic-bezier(.4, 0, .2, 1);
+  --bbkan-duration-control: 180ms;
+  --bbkan-duration-indicator: 220ms;
+  --bbkan-duration-enter: 350ms;
+  --bbkan-duration-reel: 850ms;
+}
+
+.bbkan-motion-control {
+  transition: color var(--bbkan-duration-control) var(--bbkan-ease-responsive),
+    background-color var(--bbkan-duration-control) var(--bbkan-ease-responsive),
+    border-color var(--bbkan-duration-control) var(--bbkan-ease-responsive),
+    box-shadow var(--bbkan-duration-control) var(--bbkan-ease-responsive),
+    transform var(--bbkan-duration-control) var(--bbkan-ease-responsive);
+}
+
+.bbkan-motion-indicator {
+  transition: transform var(--bbkan-duration-indicator) var(--bbkan-ease-responsive),
+    opacity var(--bbkan-duration-indicator) var(--bbkan-ease-responsive);
+}
+
+/* Add only when an entrance should run; final styles belong to the component. */
+.bbkan-motion-enter {
+  animation: bbkan-enter var(--bbkan-duration-enter) var(--bbkan-ease-settle) both;
+}
+
+@keyframes bbkan-enter {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bbkan-motion-control,
+  .bbkan-motion-indicator { transition: none; }
+  .bbkan-motion-enter { animation: none; }
+}
+

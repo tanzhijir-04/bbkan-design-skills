@@ -12,6 +12,7 @@ Apply the visual language of 不白看 to a new design while keeping the result 
 ## Choose the medium
 
 - For a website, read [references/web.md](references/web.md).
+- For website motion or interactions, also read [references/motion.md](references/motion.md); use [assets/bbkan-motion.css](assets/bbkan-motion.css) when useful.
 - For a poster, read [references/poster.md](references/poster.md).
 - For work spanning both, use the shared design principles below, then read both references and keep the visual identity consistent across screen and print.
 

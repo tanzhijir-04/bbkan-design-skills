@@ -11,6 +11,7 @@ Use this reference for responsive websites and web interfaces in the BBKan visua
 
 ## Components and interaction
 
+- For motion timing, easing, and reduced-motion behavior, see [motion.md](motion.md).
 - Use squared corners or a small radius. Avoid glossy gradients, soft floating shadows, and pill-shaped controls unless the product already depends on them.
 - For a tactile button, use a crisp border with a light inset edge on the top/left and a darker edge on the bottom/right. Show a pressed state by shifting the control a small amount or changing the hard shadow; keep focus clearly visible.
 - Provide hover, focus-visible, active, disabled, and selected states where relevant. Do not communicate state through color alone.
@@ -27,3 +28,4 @@ Use this reference for responsive websites and web interfaces in the BBKan visua
 ## Finish
 
 Use [../assets/bbkan-theme.css](../assets/bbkan-theme.css) for starting tokens and border helpers. Treat the file as optional; map the values into the host project's existing token system when one exists.
+
