@@ -1,8 +1,101 @@
 # bbkan-design-skills
 
+**以「不白看」为灵感的网页与海报视觉设计 Skill。**
+
+[中文](#中文) · [English](#english) · [查看不白看示例网站](https://bbkan.2030036732.workers.dev/) · [支持作者](https://ifdian.net/a/tanz666)
+
+## 中文
+
+BBKan Design Skills 将「不白看」的纸白底色、深蓝窗口栏、橙色点缀、硬边框与编辑式排版整理成可复用的设计指导，适用于网页界面与海报。它帮助 AI 编程或设计助手理解这套视觉语言，并结合项目内容重新设计。
+
+**在线参考：**[不白看 · 发现值得认真看的内容](https://bbkan.2030036732.workers.dev/)。
+
+### 安装
+
+#### 方法一：通过 Skills CLI 安装（推荐）
+
+需要 Node.js 22.20 或更新版本。在项目目录中打开终端，运行：
+
+```bash
+npx skills add tanzhijir-04/bbkan-design-skills --skill bbkan-visual-design
+```
+
+按照提示选择使用的 AI 助手和安装范围。要直接安装到 Codex 的用户级目录，供多个项目使用：
+
+```bash
+npx skills add tanzhijir-04/bbkan-design-skills --skill bbkan-visual-design --agent codex --global --yes
+```
+
+安装到 Claude Code 的用户级目录：
+
+```bash
+npx skills add tanzhijir-04/bbkan-design-skills --skill bbkan-visual-design --agent claude-code --global --yes
+```
+
+去掉 `--global` 可安装到当前项目。安装后建议开启新的助手会话；如需了解更多选项，可运行 `npx skills --help`。
+
+#### 方法二：手动安装
+
+下载或克隆本仓库，将 `skills/bbkan-visual-design` 整个文件夹复制到对应位置：
+
+| 助手与范围 | 安装路径 |
+| --- | --- |
+| Codex：当前项目 | `<项目目录>/.agents/skills/bbkan-visual-design/` |
+| Codex：所有项目 | `~/.agents/skills/bbkan-visual-design/` |
+| Claude Code：当前项目 | `<项目目录>/.claude/skills/bbkan-visual-design/` |
+| Claude Code：所有项目 | `~/.claude/skills/bbkan-visual-design/` |
+
+请保留文件夹中的 `SKILL.md`、`references/` 和 `assets/`，然后启动新的助手会话。
+
+### 使用
+
+直接告诉助手使用「不白看视觉风格」，或在支持显式调用的助手中输入：
+
+```text
+$bbkan-visual-design 用不白看的视觉风格，为社区图书交换设计一个响应式首页。
+```
+
+```text
+$bbkan-visual-design 用不白看的视觉风格，设计一张 A3 竖版独立电影放映海报。
+```
+
+Skill 会根据网页或海报读取相应的设计指南。它提供颜色、字体、排版、组件和输出建议，不要求使用「不白看」的标志或照搬网站内容。
+
+### 包含什么
+
+- [`SKILL.md`](skills/bbkan-visual-design/SKILL.md)：共享视觉原则及网页、海报的使用指引。
+- [`references/web.md`](skills/bbkan-visual-design/references/web.md)：网页布局、组件状态与响应式设计。
+- [`references/poster.md`](skills/bbkan-visual-design/references/poster.md)：海报构图、信息层级与输出要点。
+- [`assets/bbkan-theme.css`](skills/bbkan-visual-design/assets/bbkan-theme.css)：可选的网页颜色变量与立体边框样式。
+- [`examples/`](examples/)：网页和海报的示例提示词。
+
+**动效覆盖范围：**目前包含按钮按下效果、悬停与焦点状态的提示，以及减少动态效果的检查建议；尚未提供完整的动效规范或动画组件。
+
+### 作者与支持
+
+作者：**Zhijie Tan**（[@tanzhijir-04](https://github.com/tanzhijir-04)）。如果这个项目对你有帮助，欢迎通过 [爱发电 · tanz666](https://ifdian.net/a/tanz666) 支持，也欢迎在 GitHub 给仓库点 Star。
+
+### 赞助商招募
+
+本项目正在寻找赞助商，欢迎希望支持开源设计工具的个人、团队或品牌通过 [作者 GitHub 主页](https://github.com/tanzhijir-04) 或 [爱发电](https://ifdian.net/a/tanz666) 联系作者，商讨赞助合作。
+
+| 赞助商 | 展示位 |
+| --- | --- |
+| 待招募 | 在此展示赞助商名称、标志及链接 |
+
+### 开源许可
+
+本项目采用 [MIT License](LICENSE)。
+
+---
+
+## English
+
 **A small visual design system for websites and posters, inspired by 不白看 (BBKan).**
 
 It brings the site's warm paper surfaces, ink-like typography, deep blue window chrome, orange accents, square corners, and tactile inset borders into two practical formats: responsive web interfaces and print-ready posters. The goal is to preserve the visual character while adapting the layout to the job and the medium.
+
+**Live reference:** [Visit 不白看 (BBKan)](https://bbkan.2030036732.workers.dev/).
 
 ## Install
 
@@ -63,6 +156,8 @@ The skill first identifies the medium and its constraints, then applies the shar
 - `skills/bbkan-visual-design/assets/bbkan-theme.css` — optional CSS variables and tactile border utilities for web work.
 - `examples/` — short example briefs for trying both formats.
 
+**Motion coverage:** The current skill suggests pressed button effects, hover and focus states, and reduced-motion checks. It does not yet include a complete motion system or animation components.
+
 ## Design tokens
 
 | Role | Light | Dark |
@@ -84,6 +179,14 @@ For posters, treat these as a palette rather than fixed screen colors: check con
 Created by **Zhijie Tan** ([@tanzhijir-04](https://github.com/tanzhijir-04)).
 
 If this skill helps your work, you can support its creator at [爱发电 · tanz666](https://ifdian.net/a/tanz666).
+
+## Sponsors wanted
+
+We are looking for sponsors to support this open-source project. Individuals, teams, and brands can reach out via the [author's GitHub profile](https://github.com/tanzhijir-04) or [Afdian](https://ifdian.net/a/tanz666) to discuss sponsorship.
+
+| Sponsor | Placement |
+| --- | --- |
+| Open for sponsorship | Your name, logo, and link can appear here. |
 
 ## License
 
