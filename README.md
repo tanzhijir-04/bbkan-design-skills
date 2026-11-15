@@ -14,7 +14,7 @@
 
 **网站白色模式截图**（保存于 2026 年 11 月 14 日）：
 
-![不白看网站首页白色模式截图](docs/images/bbkan-home-light.png)
+<img src="docs/images/bbkan-home-preview.png" alt="不白看网站首页白色模式截图" width="560">
 
 ### 安装
 
