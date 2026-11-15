@@ -1,9 +1,11 @@
 ---
 name: bbkan-visual-design
-description: "Use when creating or restyling a website, web interface, or poster in the 不白看 (BBKan) visual style: warm paper, deep blue chrome, orange accents, and tactile retro details."
+description: "Use when creating or restyling a website, web interface, or poster in 纸窗蓝 (BBKan Paperframe) or 不白看 (BBKan) visual style: warm paper, deep blue chrome, orange accents, and tactile retro details."
 ---
 
 # BBKan Visual Design
+
+The style is called **纸窗蓝 (BBKan Paperframe)**, named for its paper-like surfaces and deep-blue window frames.
 
 Apply the visual language of 不白看 to a new design while keeping the result useful for its audience, content, and medium. The style combines warm editorial paper with compact retro-computer details: considered typography, restrained color, square geometry, crisp rules, and physical-looking borders.
 
@@ -29,3 +31,4 @@ Use [assets/bbkan-theme.css](assets/bbkan-theme.css) as an optional starting poi
 ## Working approach
 
 Identify the audience, content, action or takeaway, and delivery medium. Choose a hierarchy and layout that serve them, then apply the relevant reference. If a required detail is missing, make a modest reversible assumption and state it briefly. Check the result at its actual viewport or print dimensions, including text legibility and contrast.
+
