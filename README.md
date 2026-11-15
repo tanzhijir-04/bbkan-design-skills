@@ -1,12 +1,14 @@
 # bbkan-design-skills
 
-**以「不白看」为灵感的网页与海报视觉设计 Skill。**
+**纸窗蓝 · BBKan Paperframe** — 以「不白看」为灵感的网页与海报视觉设计 Skill。
 
 [中文](#中文) · [English](#english) · [查看不白看示例网站](https://bbkan.2030036732.workers.dev/) · [支持作者](https://ifdian.net/a/tanz666)
 
+![纸窗蓝视觉风格：窗口、配色与组件示例](https://raw.githubusercontent.com/tanzhijir-04/zhijir_imgur/main/img/20261115144558286.png)
+
 ## 中文
 
-BBKan Design Skills 将「不白看」的纸白底色、深蓝窗口栏、橙色点缀、硬边框与编辑式排版整理成可复用的设计指导，适用于网页界面与海报。它帮助 AI 编程或设计助手理解这套视觉语言，并结合项目内容重新设计。
+**纸窗蓝（BBKan Paperframe）** 是本项目为这套视觉语言取的名字：「纸」代表温暖的纸面底色与编辑式排版，「窗蓝」来自深蓝色的复古窗口。BBKan Design Skills 将这些特征与橙色点缀、硬边框整理成可复用的设计指导，适用于网页界面与海报。它帮助 AI 编程或设计助手理解这套视觉语言，并结合项目内容重新设计。
 
 **在线参考：**[不白看 · 发现值得认真看的内容](https://bbkan.2030036732.workers.dev/)。
 
@@ -49,7 +51,7 @@ npx skills add tanzhijir-04/bbkan-design-skills --skill bbkan-visual-design --ag
 
 ### 使用
 
-直接告诉助手使用「不白看视觉风格」，或在支持显式调用的助手中输入：
+直接告诉助手使用「纸窗蓝」或「不白看视觉风格」，或在支持显式调用的助手中输入：
 
 ```text
 $bbkan-visual-design 用不白看的视觉风格，为社区图书交换设计一个响应式首页。
@@ -91,7 +93,7 @@ Skill 会根据网页或海报读取相应的设计指南。它提供颜色、�
 
 ## English
 
-**A small visual design system for websites and posters, inspired by 不白看 (BBKan).**
+**BBKan Paperframe** is a visual design language for websites and posters, inspired by 不白看 (BBKan). Its Chinese name, **纸窗蓝**, brings together paper, windows, and blue.
 
 It brings the site's warm paper surfaces, ink-like typography, deep blue window chrome, orange accents, square corners, and tactile inset borders into two practical formats: responsive web interfaces and print-ready posters. The goal is to preserve the visual character while adapting the layout to the job and the medium.
 
